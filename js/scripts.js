@@ -1,4 +1,3 @@
-console.log('external Js')
 const Weight = document.getElementById('input-Weight');
 const Age = document.getElementById('input-Age');
 const Heigh = document.getElementById('input-Heigh');
