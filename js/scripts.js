@@ -1,10 +1,5 @@
-const Weight = document.getElementById('input-Weight');
-const Age = document.getElementById('input-Age');
-const Heigh = document.getElementById('input-Heigh');
-const resultBMIElement = document.querySelector('.result-BMI');
-const categoryBMIElement = document.querySelector('.category-BMI');
-const dataUserElement = document.querySelector('data-user .Age');
-const genderElement = document.querySelector('data-user .Gender');
+console.log('external Js');
+
 
 //Klasfikasi hasil BMI
 function klasfikasiBMI(bmi){
@@ -21,12 +16,20 @@ function klasfikasiBMI(bmi){
 
 //Perhitungan dan menampilkan hasil pada html page 
 function hitungBmi(event){
+    const Weight = document.getElementById("Weight").value;
+    const Age = document.getElementById("Age").value;
+    const Heigh = document.getElementById("Heigh").value;
+    const resultBMIElement = document.querySelector(".result-BMI");
+    // start 
+    // const categoryBMIElement = document.querySelector(".category-BMI");
+    const dataUserElement = document.getElementById("Umur");
+    const gender = document.getElementsByName("gender");
+    const genderElement = document.getElementById("jkel");
+    // end 
     event.preventDefault(); 
-
-    const Hg = parseFloat(Heigh.value)/ 100;
-    const Wg = parseFloat(Weight.value);
-    const Ag = parseFloat(Age.value, 10);
-
+    const Hg = parseFloat(Heigh)/ 100;
+    const Wg = parseFloat(Weight);
+    const Ag = parseFloat(Age, 10);
     if (Weight.value==0 || Heigh.value==0) {
         alert ("Please enter valid values for weight and height")
         return;
@@ -34,11 +37,13 @@ function hitungBmi(event){
 
     let bmi = Wg / (Hg * Hg);
     bmi = bmi.toFixed(1);
-
     resultBMIElement.textContent = bmi;
-    categoryBMIElement.textContent = '${klasifikasi(parseFloat(bmi))}';
-    dataUserElement.textContent ='$(Ag)';
-    genderElement.textContent = gender.value;
+    // categoryBMIElement.textContent = '${klasifikasi(parseFloat(bmi))}';
+    dataUserElement.textContent = Ag;
+    for (i = 0; i < gender.length; i++) {
+        if (gender[i].checked) genderElement.textContent = gender[i].value;
+    }
+    // end saya rubah dan tambah
 }
 
 //Reset Button 
@@ -51,5 +56,5 @@ function resetForm() {
 }
 
 //Event Submit dan Reset
-document.getElementById('form-submit').addEventListener('submit', Submitbmi);
-document.getElementById('reset-button').addEventListener('click',resetForm);
+// document.getElementById('form-submit').addEventListener('submit', Submitbmi);
+// document.getElementById('reset-button').addEventListener('click',resetForm);

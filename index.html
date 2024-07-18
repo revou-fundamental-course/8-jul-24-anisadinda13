@@ -30,24 +30,24 @@
                 <div>
                     <div class="input-title">Gender</div>
                 <br>
-                    <input type="radio" id="selection-man"><label for="selection-man">Male</label>
-                    <input type="radio" id="selection-female"><label for="selection-femaale">Female</label>
+                    <input type="radio" name="gender" vale="Male" id="selection-man"><label for="selection-man">Male</label>
+                    <input type="radio" name="gender" vale="Female" id="selection-female"><label for="selection-female">Female</label>
                 </div>
                 <br>
                 <div>
-                <label for="input-Weight">Weight (Kg)</label>
-                    <input type="number" id ="Weight">
+                    <label for="Weight">Weight (Kg)</label>
+                    <input type="number" name="weight" id="Weight">
                 </div>
                 <div>
-                    <label for="input-Age">Age (y.o.)</label>
-                    <input type="number" id ="Weight">
+                    <label for="Age">Age (y.o.)</label>
+                    <input type="number" id ="Age">
                 </div>
                 <div>
-                    <label for="input-Heigh">Heigh (cm)</label>
+                    <label for="Heigh">Heigh (cm)</label>
                     <input type="number" id ="Heigh">
                 </div>
                 <div>
-                    <button class="button submit">Submit BMI</button>
+                    <button onclick="hitungBmi(event)" class="button submit">Submit BMI</button>
                     <button class="button reset">Reset</button>
                 </div>
             </form>
