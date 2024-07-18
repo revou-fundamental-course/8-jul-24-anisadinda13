@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IF=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Calculator by Dinyum</title>
+    <title>BMI Calculator by Dinyum </title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -30,20 +30,28 @@
                 <div>
                     <div class="input-title">Gender</div>
                 <br>
+                <!-- start gender -->
                     <input type="radio" name="gender" vale="Male" id="selection-man"><label for="selection-man">Male</label>
                     <input type="radio" name="gender" vale="Female" id="selection-female"><label for="selection-female">Female</label>
+                <!-- end gender -->
                 </div>
                 <br>
                 <div>
+                    <!-- start weight -->
                     <label for="Weight">Weight (Kg)</label>
+                     <!-- end weight -->
                     <input type="number" name="weight" id="Weight">
                 </div>
                 <div>
+                    <!-- start age -->
                     <label for="Age">Age (y.o.)</label>
+                    <!-- end age -->
                     <input type="number" id ="Age">
                 </div>
                 <div>
+                    <!-- start heigh -->
                     <label for="Heigh">Heigh (cm)</label>
+                    <!-- end heigh -->
                     <input type="number" id ="Heigh">
                 </div>
                 <div>
@@ -80,7 +88,9 @@
            <!-- Result Section --> 
             <section class="result-section">
                 <p>The Result is:</p>
+                 <!-- start result -->
                 <p class= "data-user">Age: <span id="Umur"></span>, Gender: <span id="jkel"></span></p>
+                <!-- end result -->
                 <p>Your BMI is</p>
                 <h2 class="result-BMI">0.0</h2>
                 <p>You fall into the category:</p>
@@ -127,7 +137,7 @@
             </article>
         </section>
     </main>
-    
+
     <script src="js/scripts.js"></script>
 
 </body>
