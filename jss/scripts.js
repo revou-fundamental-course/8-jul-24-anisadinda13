@@ -28,8 +28,8 @@ function hitungBmi(event){
     const Wg = parseFloat(Weight.value);
     const Ag = parseFloat(Age.value, 10);
 
-    if (isNaN(Weight) || isNaN(Height) || Weight <= 0 || Height  <=0 {
-        alert ("Please enter valid values for weight and ")
+    if (Weight.value==0 || Heigh.value==0) {
+        alert ("Please enter valid values for weight and height")
         return;
     }
 
