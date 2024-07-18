@@ -43,7 +43,7 @@ function hitungBmi(event){
     for (i = 0; i < gender.length; i++) {
         if (gender[i].checked) genderElement.textContent = gender[i].value;
     }
-    // end saya rubah dan tambah
+    // end 
 }
 
 //Reset Button 
