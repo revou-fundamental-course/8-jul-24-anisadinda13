@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IF=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator by Dinyum</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+    <!-- Main Title  -->
+    <header class="main-title">
+        <h1>Calculator BMI</h1>
+    </header>
+
+    <main>
+        <!-- Left Content -->
+      <section class="main-content">
+          <!-- Main article -->
+          <articcle>
+            <h2>Information</h2>
+            <p>Ideal body weight is everyone's dream. Not only does having an ideal body shape support your appearance, but it also indicates a healthy body condition. How about you? Come on, calculate it now with the BMI calculator.</p>
+        </articcle>
+
+        <!-- form -->
+        <section class="section-form" id="bmi-form">
+            <form clas="form-input" id="bmi-form">
+                <div>
+                    <div class="input-title">Gender</div>
+                <br>
+                    <input type="radio" id="selection-man"><label for="selection-man">Male</label>
+                    <input type="radio" id="selection-female"><label for="selection-femaale">Female</label>
+                </div>
+                <br>
+                <div>
+                <label for="input-Weight">Weight (Kg)</label>
+                    <input type="number" id ="Weight">
+                </div>
+                <div>
+                    <label for="input-Age">Age (y.o.)</label>
+                    <input type="number" id ="Weight">
+                </div>
+                <div>
+                    <label for="input-Heigh">Heigh (cm)</label>
+                    <input type="number" id ="Heigh">
+                </div>
+                <div>
+                    <button class="button submit">Submit BMI</button>
+                    <button class="button reset">Reset</button>
+                </div>
+            </form>
+        </section>
+
+       <!-- Form article --> 
+        <section>
+            <header>
+                <h2>Feature Advantage</h2>
+            </header>
+
+            <article>
+                <p>1. Calculating body weight</p>
+                <p>2. Determining body weight category</p>
+                <p>3. Preparing a weight loss program</p>
+                <p>This calculator should only be used by adults (pregnant or breastfeeding women should not rely on BMI readings) and no action should be taken based on its values other than consulting a qualified professional, such as a doctor.</p>
+                <p>The calculator will give you an overview of how your weight compares to general values. Body mass index (or BMI) is calculated as your weight (in kilograms) divided by the square of your height (in meters) or BMI = kg/m².</p>
+            </article>
+        </section>
+      </section>
+
+        <!-- Right Content -->
+        <section class="main-content">
+            <!-- Result article -->
+        <article>
+            <header>
+                <h1>Result</h1>
+            </header>
     
+           <!-- Result Section --> 
+            <section class="result-section">
+                <p>The Result is:</p>
+                <p class= "data-user">Age: <span class="Age"></span>, Gender: <span
+                        class="Gender"></span></p>
+                <p>Your BMI is</p>
+                <h2 class="result-BMI">0.0</h2>
+                <p>You fall into the category:</p>
+                <div><button class="button download">Download Hasil BMI</button></div>
+            </section>
+    
+            <!-- Result article -->
+                <header>
+                    <h2>BMI results between 23 and 25</h2>
+                </header>
+            <article>
+                <p>You are in the overweight category.</p>
+                <p>The best way to lose weight is by managing your calorie intake and exercising.</p>
+                <p>If your BMI falls into this category, it is recommended that you lose weight to reach the normal range.</p>
+                <div>
+                    <button class="button konsultasi">Nutritionist Consultation via App</button>
+                    <button class="button registasi">Consultation Registration Form</button>
+                </div>
+                <p>BMI does not fully represent a comprehensive diagnosis of an individual's overall health and disease risks. You need further consultation regarding the risks and concerns related to your weight.</p>
+            </article>
+    
+            <!-- General information --> 
+            <section class="General-information">
+                <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGlL4B7Eubgs5nswWv3kXl587JkseHcZgoUw&s" width="220" heigh="220" align="Left" class="gundut">
+                </div>
+                <p>Some diseases associated with obesity</p>
+                <p>Diabetes</p>
+                <p>Hypertension</p>
+                <p>Heart Disease</p>
+                <p>Osteoarthritis</p>
+            </section>
+            <section></section>
+            <div>
+                <h2>Download Application</h2>
+                <a href="https://play.google.com/store">
+                    <img src="https://cdn1-production-images-kly.akamaized.net/FW_pbCKNMxDTn3cV0icP3XgBx2o=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4100889/original/081579600_1658802835-Google_Play1.jpg" width="120" height="80" class="playstore">
+                <a/>
+                <a href="https://www.apple.com/app-store/">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF-HYA0Gmelsww_DPoxmOR0YLgnF0R0lycqA&s"width="140" height="60" class="applestore">
+                <a/>
+            </div>
+            </section>
+            </article>
+        </section>
+    </main>
+    
+    <script src="js/scripts.js"></script>
+
 </body>
 </html>
