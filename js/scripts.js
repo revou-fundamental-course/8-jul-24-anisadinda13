@@ -3,13 +3,13 @@ console.log('external Js');
 
 //Klasfikasi hasil BMI
 function klasfikasiBMI(bmi){
-    if (bmi<18.5){
+    if (bmi < 18.5){
         return "Underweight";
     }else if (bmi < 25){
         return "Normal (Ideal)";
     }else if (bmi < 30){
         return "Overweight";
-    } else {
+    } else{
         return "Obesity";
     }
 }
